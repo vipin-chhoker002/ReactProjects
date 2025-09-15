@@ -1,0 +1,103 @@
+.homecontainer {
+    width: 100%;
+    margin-top: 60px;
+    min-height: 80vh;
+    background: radial-gradient(58.21% 100% at 50% 0%, #202124 0%, #1b1d22 68.75%, #0d0d0d 100%);
+}
+.welcomeText{
+    
+    color: var(--purewhite);
+    margin: 50px 0 0 20px;
+    flex-direction: column;
+}
+.welcomeText h1{
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+.homecontent{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.welcomeLogo img{
+   
+    width: 300px;
+}
+.welcomeLogo,.tagline{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcomeText h1 span{
+   
+    padding: 5px;
+    border-radius: 0.2em;
+    background: var(--maingreen);
+
+}
+.tagline{
+    min-width: 280px;
+    max-width: 700px;
+}
+.tagline h5{
+    margin-bottom: 40px;
+    color: var(--purewhite);
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+.tagline p {
+
+    color: gray;
+    
+}
+.taglinebtn{
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+
+.offer-heading h1{
+    font-size: 4em;
+    color:#474343;
+}
+
+
+.swicthbtn{
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 0.4em;
+    background: var(--maingreen);
+    margin: 10px;
+
+}
+.swicthbtn.active{
+    color: var(--purewhite) !important;
+}
+.swicthbtn a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--purewhite);
+}
+@media screen and (max-width:480px) {
+    .welcomeText h1{
+        font-size: 1.3em;
+    }
+    .welcomeLogo img{
+        width: 150px;
+    }
+    .welcomeText h1 span{
+        display: block;
+    }
+    .offer-heading h1{
+        font-size: 12vw;
+    }
+}
