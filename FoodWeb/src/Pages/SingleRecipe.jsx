@@ -1,14 +1,36 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form'
-import { nanoid } from 'nanoid'
-
 import { Recipe } from '../Context/Context'
+import { useState } from 'react';
+
 
 function SingleRecipe() {
     const { data, setdata } = useContext(Recipe);
     const params = useParams();
     const recipe = data.find((item) => item.id === params.id);
+
+    const [favItem, setfavItem] = useState(JSON.parse(localStorage.getItem("fav")) || []
+    )
+
+
+    const addFav = () => {
+        let copydata = [...favItem]
+        copydata.push(recipe)
+        setfavItem(copydata)
+        localStorage.setItem("fav", JSON.stringify(copydata))
+    }
+    const removeFav = () => {
+        const unfav = favItem.filter((f) => f.id != recipe.id);
+        setfavItem(unfav)
+        localStorage.setItem('fav', JSON.stringify(unfav))
+    }
+
+    useEffect(() => {
+
+
+
+    }, [favItem])
 
 
 
@@ -27,15 +49,20 @@ function SingleRecipe() {
 
     function submithandle(recipe) {
         let index = data.findIndex((item) => item.id === params.id)
+
         const copyData = [...data];
         copyData[index] = { ...copyData[index], ...recipe }
-        console.log(copyData)
         setdata(copyData)
+        localStorage.setItem("recipe", JSON.stringify(copyData))
     }
 
 
     return (
-        <div className='w-full flex'>
+        <div className='w-full flex  border-2 '>
+            {favItem.find((f) => f.id == recipe?.id) ? (<i onClick={removeFav} className="ri-star-fill  text-3xl p-3 absolute float-right cursor-pointer"></i>) : (<i onClick={addFav} className="ri-star-line p-3 text-3xl  absolute float-right cursor-pointer"></i>)
+
+            }
+
             <div className='left w-1/2 p-2'>
                 <img src={recipe.image} width="200px" alt="" />;
                 <h1 className='text-2xl font-bold'>{recipe.tittle}</h1>
@@ -47,9 +74,11 @@ function SingleRecipe() {
 
 
             </div>
-            <div className="right w-1/2 p-2">
+
+            <div className=" relative right w-1/2 p-2">
 
                 <form className='w-full' onSubmit={handleSubmit(submithandle)}>
+
 
                     <input className='border-b w-[50%]  mb-2 outline-0' type="text"  {...register("tittle")} placeholder='Recipe tittle' />
                     <br />

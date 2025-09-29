@@ -4,7 +4,6 @@ import RecipesCard from '../Routes/components/RecipesCard';
 
 function Recipoes() {
   const { data } = useContext(Recipe);
-  console.log(data)
   const renderData = data.map((recipes) => <RecipesCard key={recipes.id} recipes={recipes} />)
 
   return (

@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid'
 import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { Recipe } from '../Context/Context';
-import { useNavigate } from 'react-router-dom';
+import { UNSAFE_getPatchRoutesOnNavigationFunction, useNavigate } from 'react-router-dom';
 
 function Create() {
   const { register, handleSubmit, reset } = useForm()
@@ -10,7 +10,10 @@ function Create() {
   const navigate = useNavigate();
   function submithandle(recipedata) {
     recipedata.id = nanoid();
-    setdata((pre) => [...pre, recipedata])
+    const copyData = [...data]
+    copyData.push(recipedata)
+    setdata(copyData)
+    localStorage.setItem("recipe", JSON.stringify(copyData))
     navigate("/recipes");
     reset();
   }

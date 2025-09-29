@@ -6,6 +6,7 @@ import Recipoes from '../Pages/Recipoes'
 import NavBar from './components/NavBar';
 import Create from './../Pages/Create';
 import SingleRecipe from './../Pages/SingleRecipe';
+import PageNotfound from '../Pages/PageNotfound'
 
 function MainRoutes() {
     return (
@@ -21,8 +22,9 @@ function MainRoutes() {
 
                 <Route path='/about' element={<About></About>} />
                 <Route path='/recipe/details/:id' element={<SingleRecipe></SingleRecipe>} />
-
                 <Route path='/create' element={<Create></Create>} />
+                <Route path='*' element={<PageNotfound></PageNotfound>} />
+
             </Routes>
         </>
     )

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Recipe } from '../../Context/Context';
 import { set } from 'react-hook-form';
@@ -10,7 +10,10 @@ function RecipesCard(props) {
     function deleteEvent(e) {
         let updateData = data.filter((item) => e.target.id != item.id);
         setdata([...updateData])
+        localStorage.setItem("recipe", JSON.stringify(updateData))
+        localStorage.setItem("fav", JSON.stringify(updateData))
     }
+
 
     return (
         <div className='flex flex-col'>
