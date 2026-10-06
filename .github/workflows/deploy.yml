@@ -1,0 +1,105 @@
+name: Deploy React Projects
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # =========================
+      # FoodWeb
+      # =========================
+      - name: Install FoodWeb
+        working-directory: FoodWeb
+        run: npm install
+
+      - name: Build FoodWeb
+        working-directory: FoodWeb
+        run: npm run build
+
+      # =========================
+      # GithubUser
+      # =========================
+      - name: Install GithubUser
+        working-directory: GithubUser
+        run: npm install
+
+      - name: Build GithubUser
+        working-directory: GithubUser
+        run: npm run build
+
+      # =========================
+      # ReduxProject
+      # =========================
+      - name: Install ReduxProject
+        working-directory: ReduxProject/forntend
+        run: npm install
+
+      - name: Build ReduxProject
+        working-directory: ReduxProject/forntend
+        run: npm run build
+
+      # =========================
+      # TechVision
+      # =========================
+      - name: Install TechVision
+        working-directory: techvison/techvisionary24.7
+        run: npm install
+
+      - name: Build TechVision
+        working-directory: techvison/techvisionary24.7
+        run: npm run build
+
+      # =========================
+      # Combine all builds
+      # =========================
+      - name: Prepare GitHub Pages
+        run: |
+          mkdir -p deploy
+
+          cp -r FoodWeb/dist deploy/FoodWeb
+          cp -r GithubUser/dist deploy/GithubUser
+          cp -r ReduxProject/forntend/dist deploy/ReduxProject/forntend
+          cp -r techvison/techvisionary24.7/dist deploy/techvison/techvisionary24.7
+
+      # =========================
+      # Upload Pages artifact
+      # =========================
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: deploy
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
