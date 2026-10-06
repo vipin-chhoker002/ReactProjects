@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: '/ReactProjects/foodweb/', // Yeh line humne add ki hai
+  base: '/React_projects/foodweb/', // Yeh line humne add ki hai
 })
