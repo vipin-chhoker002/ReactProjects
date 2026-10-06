@@ -3,7 +3,7 @@ name: Deploy FoodWeb to GitHub Pages
 on:
   push:
     branches:
-      - master # Aapki repository ki default branch
+      - master
 
 permissions:
   contents: read
@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies and Build
         run: |
           cd FoodWeb
-          npm install
+          npm install --include=optional
           npm run build
 
       - name: Setup Pages
@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './FoodWeb/dist' # Vite build output directory
+          path: './FoodWeb/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
