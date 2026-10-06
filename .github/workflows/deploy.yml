@@ -68,19 +68,22 @@ jobs:
         run: npm run build
 
       # =========================
-      # Combine all builds
+      # Prepare GitHub Pages
       # =========================
       - name: Prepare GitHub Pages
         run: |
-          mkdir -p deploy
+          mkdir -p deploy/FoodWeb
+          mkdir -p deploy/GithubUser
+          mkdir -p deploy/ReduxProject/forntend
+          mkdir -p deploy/techvison/techvisionary24.7
 
-          cp -r FoodWeb/dist deploy/FoodWeb
-          cp -r GithubUser/dist deploy/GithubUser
-          cp -r ReduxProject/forntend/dist deploy/ReduxProject/forntend
-          cp -r techvison/techvisionary24.7/dist deploy/techvison/techvisionary24.7
+          cp -r FoodWeb/dist/* deploy/FoodWeb/
+          cp -r GithubUser/dist/* deploy/GithubUser/
+          cp -r ReduxProject/forntend/dist/* deploy/ReduxProject/forntend/
+          cp -r techvison/techvisionary24.7/dist/* deploy/techvison/techvisionary24.7/
 
       # =========================
-      # Upload Pages artifact
+      # Upload Pages Artifact
       # =========================
       - name: Setup Pages
         uses: actions/configure-pages@v5
