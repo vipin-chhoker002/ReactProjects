@@ -1,0 +1,327 @@
+{
+  "Products": [
+    {
+      "id": "P001",
+      "tittle": "Butter Chicken",
+      "disc": "Creamy tomato based chicken curry",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/butter-chicken/800/600"
+    },
+    {
+      "id": "P002",
+      "tittle": "Paneer Tikka",
+      "disc": "Grilled paneer with spices and vegetables",
+      "category": "starter",
+      "Image": "https://picsum.photos/seed/paneer-tikka/800/600"
+    },
+    {
+      "id": "P003",
+      "tittle": "Chicken Biryani",
+      "disc": "Aromatic basmati rice with spicy chicken",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/chicken-biryani/800/600"
+    },
+    {
+      "id": "P004",
+      "tittle": "Veg Biryani",
+      "disc": "Fragrant rice cooked with mixed vegetables",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/veg-biryani/800/600"
+    },
+    {
+      "id": "P005",
+      "tittle": "Masala Dosa",
+      "disc": "Crispy dosa filled with spicy potato masala",
+      "category": "breakfast",
+      "Image": "https://picsum.photos/seed/masala-dosa/800/600"
+    },
+    {
+      "id": "P006",
+      "tittle": "Chole Bhature",
+      "disc": "Spicy chickpeas served with fluffy bhature",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/chole-bhature/800/600"
+    },
+    {
+      "id": "P007",
+      "tittle": "Dal Makhani",
+      "disc": "Slow cooked black lentils with creamy butter",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/dal-makhani/800/600"
+    },
+    {
+      "id": "P008",
+      "tittle": "Tandoori Chicken",
+      "disc": "Char-grilled chicken marinated in Indian spices",
+      "category": "starter",
+      "Image": "https://picsum.photos/seed/tandoori-chicken/800/600"
+    },
+    {
+      "id": "P009",
+      "tittle": "Veg Manchurian",
+      "disc": "Crispy vegetable balls in tangy Manchurian sauce",
+      "category": "starter",
+      "Image": "https://picsum.photos/seed/veg-manchurian/800/600"
+    },
+    {
+      "id": "P010",
+      "tittle": "Hakka Noodles",
+      "disc": "Stir fried noodles with fresh vegetables",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/hakka-noodles/800/600"
+    },
+    {
+      "id": "P011",
+      "tittle": "Margherita Pizza",
+      "disc": "Classic pizza with tomato, mozzarella and basil",
+      "category": "pizza",
+      "Image": "https://picsum.photos/seed/margherita-pizza/800/600"
+    },
+    {
+      "id": "P012",
+      "tittle": "Farmhouse Pizza",
+      "disc": "Loaded pizza with onions, capsicum and corn",
+      "category": "pizza",
+      "Image": "https://picsum.photos/seed/farmhouse-pizza/800/600"
+    },
+    {
+      "id": "P013",
+      "tittle": "Cheese Burger",
+      "disc": "Juicy burger with cheese and fresh vegetables",
+      "category": "burger",
+      "Image": "https://picsum.photos/seed/cheese-burger/800/600"
+    },
+    {
+      "id": "P014",
+      "tittle": "Crispy Chicken Burger",
+      "disc": "Crunchy chicken patty with creamy sauce",
+      "category": "burger",
+      "Image": "https://picsum.photos/seed/chicken-burger/800/600"
+    },
+    {
+      "id": "P015",
+      "tittle": "French Fries",
+      "disc": "Golden crispy fries seasoned with herbs",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/french-fries/800/600"
+    },
+    {
+      "id": "P016",
+      "tittle": "Peri Peri Fries",
+      "disc": "Crispy fries covered with spicy peri peri seasoning",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/peri-peri-fries/800/600"
+    },
+    {
+      "id": "P017",
+      "tittle": "Momos",
+      "disc": "Steamed dumplings served with spicy chutney",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/momos/800/600"
+    },
+    {
+      "id": "P018",
+      "tittle": "Paneer Momos",
+      "disc": "Soft dumplings filled with seasoned paneer",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/paneer-momos/800/600"
+    },
+    {
+      "id": "P019",
+      "tittle": "Spring Rolls",
+      "disc": "Crispy rolls stuffed with fresh vegetables",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/spring-rolls/800/600"
+    },
+    {
+      "id": "P020",
+      "tittle": "Chilli Paneer",
+      "disc": "Paneer cubes tossed in spicy chilli sauce",
+      "category": "starter",
+      "Image": "https://picsum.photos/seed/chilli-paneer/800/600"
+    },
+    {
+      "id": "P021",
+      "tittle": "Kadhai Paneer",
+      "disc": "Paneer cooked with bell peppers and rich masala",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/kadhai-paneer/800/600"
+    },
+    {
+      "id": "P022",
+      "tittle": "Palak Paneer",
+      "disc": "Soft paneer cubes in creamy spinach gravy",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/palak-paneer/800/600"
+    },
+    {
+      "id": "P023",
+      "tittle": "Shahi Paneer",
+      "disc": "Rich paneer curry with smooth creamy gravy",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/shahi-paneer/800/600"
+    },
+    {
+      "id": "P024",
+      "tittle": "Malai Kofta",
+      "disc": "Soft paneer dumplings in creamy gravy",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/malai-kofta/800/600"
+    },
+    {
+      "id": "P025",
+      "tittle": "Gulab Jamun",
+      "disc": "Soft sweet dumplings soaked in sugar syrup",
+      "category": "dessert",
+      "Image": "https://picsum.photos/seed/gulab-jamun/800/600"
+    },
+    {
+      "id": "P026",
+      "tittle": "Rasmalai",
+      "disc": "Soft cheese dumplings in chilled saffron milk",
+      "category": "dessert",
+      "Image": "https://picsum.photos/seed/rasmalai/800/600"
+    },
+    {
+      "id": "P027",
+      "tittle": "Chocolate Brownie",
+      "disc": "Rich and fudgy chocolate brownie",
+      "category": "dessert",
+      "Image": "https://picsum.photos/seed/chocolate-brownie/800/600"
+    },
+    {
+      "id": "P028",
+      "tittle": "Ice Cream",
+      "disc": "Creamy vanilla ice cream with chocolate topping",
+      "category": "dessert",
+      "Image": "https://picsum.photos/seed/ice-cream/800/600"
+    },
+    {
+      "id": "P029",
+      "tittle": "Mango Shake",
+      "disc": "Thick chilled mango milkshake",
+      "category": "beverage",
+      "Image": "https://picsum.photos/seed/mango-shake/800/600"
+    },
+    {
+      "id": "P030",
+      "tittle": "Cold Coffee",
+      "disc": "Chilled coffee blended with milk and ice cream",
+      "category": "beverage",
+      "Image": "https://picsum.photos/seed/cold-coffee/800/600"
+    },
+    {
+      "id": "P031",
+      "tittle": "Fresh Lime Soda",
+      "disc": "Refreshing lime drink with sparkling soda",
+      "category": "beverage",
+      "Image": "https://picsum.photos/seed/lime-soda/800/600"
+    },
+    {
+      "id": "P032",
+      "tittle": "Masala Chai",
+      "disc": "Traditional Indian tea infused with aromatic spices",
+      "category": "beverage",
+      "Image": "https://picsum.photos/seed/masala-chai/800/600"
+    },
+    {
+      "id": "P033",
+      "tittle": "Garlic Bread",
+      "disc": "Soft bread topped with garlic butter and herbs",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/garlic-bread/800/600"
+    },
+    {
+      "id": "P034",
+      "tittle": "Cheese Sandwich",
+      "disc": "Grilled sandwich filled with melted cheese",
+      "category": "breakfast",
+      "Image": "https://picsum.photos/seed/cheese-sandwich/800/600"
+    },
+    {
+      "id": "P035",
+      "tittle": "Club Sandwich",
+      "disc": "Triple layered sandwich with vegetables and sauces",
+      "category": "breakfast",
+      "Image": "https://picsum.photos/seed/club-sandwich/800/600"
+    },
+    {
+      "id": "P036",
+      "tittle": "Pav Bhaji",
+      "disc": "Spicy mashed vegetables served with buttery pav",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/pav-bhaji/800/600"
+    },
+    {
+      "id": "P037",
+      "tittle": "Rajma Rice",
+      "disc": "Classic kidney bean curry served with steamed rice",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/rajma-rice/800/600"
+    },
+    {
+      "id": "P038",
+      "tittle": "Aloo Paratha",
+      "disc": "Stuffed Indian flatbread served with butter and curd",
+      "category": "breakfast",
+      "Image": "https://picsum.photos/seed/aloo-paratha/800/600"
+    },
+    {
+      "id": "P039",
+      "tittle": "Samosa",
+      "disc": "Crispy pastry filled with spicy potatoes and peas",
+      "category": "snacks",
+      "Image": "https://picsum.photos/seed/samosa/800/600"
+    },
+    {
+      "id": "P040",
+      "tittle": "Malai Chap",
+      "disc": "Creamy soya chaap cooked with rich spices",
+      "category": "main",
+      "Image": "https://picsum.photos/seed/malai-chap/800/600"
+    },
+
+    {
+      "id": "bv-Z5k1cmTwn1ZdYH3-Mp",
+      "tittle": "malai chap",
+      "disc": "nothig more",
+      "category": "main",
+      "Image": "https://carnewschina.com/wp-content/uploads/2022/12/IM-LS7-rear.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "KpV2FNGSve_WTidvLibTm",
+      "username": "ritik",
+      "email": "vipgurjar60@gmail.com",
+      "password": "12345",
+      "isAdmin": true,
+      "profilePicture": null,
+      "cart": []
+    },
+    {
+      "id": "fKYeY7feCgdKZ_uT0F9Ua",
+      "username": "vipin",
+      "email": "vipgurjar60@gmail.com",
+      "password": "123",
+      "isAdmin": false,
+      "cart": [
+        {
+          "productId": "6Hh4yNVEUAHfLynGNQjEh",
+          "quantity": 1
+        },
+        {
+          "productId": "cRoAXP3Q9TwNAI-gG19TU",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "mobile": "samsung a65",
+      "device": "samsung",
+      "id": "722b"
+    }
+  ]
+}
