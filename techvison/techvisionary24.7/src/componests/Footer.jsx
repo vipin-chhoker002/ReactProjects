@@ -1,6 +1,6 @@
 import React from 'react'
 
-function footer() {
+function Footer() {
     return (
         <>
             <footer className=' footar  '>
@@ -59,7 +59,7 @@ function footer() {
                 </div>
                 <div className='animated-text'>
 
-                <h1>Techvisionary</h1>
+                    <h1>Techvisionary</h1>
                 </div>
             </footer >
 
@@ -67,7 +67,7 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer
 
 
 
